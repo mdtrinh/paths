@@ -1,3 +1,22 @@
+# version 0.1.1 #
+## Original Submission Date: 2021-06-17
+
+## Test environments
+
+* local Windows 10 install, R 4.0.0 and R-devel
+* R-hub builder (ubuntu-gcc-devel, ubuntu-gcc-release, fedora-clang-devel, macos-highsierra-release-cran, windows-x86_64-release, windows-x86_64-oldrel)
+
+## Additional changes
+
+Package version has been changed to 0.1.1 to reflect that this release
+is a minor bug fix.
+
+## R CMD check results
+Status: OK 
+
+
+# version 0.1.0 #
+
 ## Re-submission Date: 2020-05-03
 ## Original Submission Date: 2020-04-26
 
