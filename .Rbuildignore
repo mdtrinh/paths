@@ -10,4 +10,7 @@
 ^cran-comments.md$
 ^CRAN-RELEASE$
 ^cran-comments\.md$
+<<<<<<< HEAD
 ^CRAN-SUBMISSION$
+=======
+>>>>>>> 8cfa889bdeda49195081ddb5e92063935d4f967a
