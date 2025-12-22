@@ -1,3 +1,7 @@
+# paths 0.1.2
+
+A minor update that removes dependency on the archived package pryr
+
 # paths 0.1.1
 
 A minor update that implements a bug fix

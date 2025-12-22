@@ -1,14 +1,6 @@
 ######################################################
 # Internal functions to refit the model given formulas
 ######################################################
-
-# Wrapper around fit() that pre-fills the newdata argument
-# to replace dependency on pryr::partial()
-fit_partial <- function(class, formula, args) {
-  fit(class, formula, args, newdata = newdata)
-}
-
-# paths_fit() that makes use of fit_partial
 paths_fit <- function(data, index = 1:nrow(data), varnames,
                       formulas, classes, families, args,
                       ps_formula, ps_class, ps_family, ps_args){
@@ -22,7 +14,9 @@ paths_fit <- function(data, index = 1:nrow(data), varnames,
     environment(pure) <- environment(hybrid) <- environment()
 
   # fit K+1 outcome models
-  fit_partial <- fit_partial (fit, newdata = newdata)
+  fit_partial <- function(class, formula, args) {
+    fit(class, formula, args, newdata = newdata)
+  }
   models <- Map(fit_partial, classes, formulas, args)
   cat(".")
 
