@@ -1,3 +1,18 @@
+# version 0.1.2 #
+## Original Submission Date: 2025-12-21
+
+## Test environments
+
+* local Windows 10 install, R 4.4.2
+* R-hub builder (ubuntu-gcc-devel, ubuntu-gcc-release, fedora-clang-devel, macos-highsierra-release-cran, windows-x86_64-release, windows-x86_64-oldrel)
+
+## R CMD check results
+
+0 errors | 0 warnings | 1 note
+
+“NOTE: unable to verify current time appears in my local check environment; 
+no files are future-dated and CRAN checks are expected to verify time normally.”
+
 # version 0.1.1 #
 ## Original Submission Date: 2021-06-17
 
@@ -80,3 +95,4 @@ Possibly mis-spelled words in DESCRIPTION:
 ```
     
 Confirming that this is a new submission. Yamamoto and Zhou are proper names of package co-authors. "ignorability" is a concept in causal inference.
+
